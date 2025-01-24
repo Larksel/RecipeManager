@@ -18,4 +18,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Builders\" />
+    <Folder Include="Data\Interfaces\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Objects\Dtos\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Entities\" />
+  </ItemGroup>
+
 </Project>
