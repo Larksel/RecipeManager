@@ -15,7 +15,7 @@ public class Ingredient
     public int UnitOfMeasureId { get; set; }
 
     [ForeignKey(nameof(UnitOfMeasureId))]
-    public UnitOfMeasure UnitOfMeasure { get; init; }
+    public UnitOfMeasure? UnitOfMeasure { get; init; }
 
     public List<Recipe> Recipes { get; } = [];
     public List<RecipeIngredient> RecipeIngredients { get; } = [];
@@ -25,11 +25,10 @@ public class Ingredient
 
     }
 
-    public Ingredient(int id, string name, int unitOfMeasureId, UnitOfMeasure unitOfMeasure)
+    public Ingredient(int id, string name, int unitOfMeasureId)
     {
         Id = id;
         Name = name;
         UnitOfMeasureId = unitOfMeasureId;
-        UnitOfMeasure = unitOfMeasure;
     }
 }
