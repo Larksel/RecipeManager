@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Builders\" />
     <Folder Include="Data\Interfaces\" />
     <Folder Include="Data\Repositories\" />
     <Folder Include="Objects\Dtos\" />
