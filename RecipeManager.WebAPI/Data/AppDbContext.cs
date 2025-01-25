@@ -21,7 +21,5 @@ public class AppDbContext : DbContext
         IngredientBuilder.Build(modelBuilder);
         RecipeBuilder.Build(modelBuilder);
         UnitOfMeasureBuilder.Build(modelBuilder);
-        RecipeCategoryBuilder.Build(modelBuilder);
-        RecipeIngredientBuilder.Build(modelBuilder);
     }
 }

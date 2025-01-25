@@ -2,6 +2,11 @@
 
 namespace RecipeManager.WebAPI.Objects.Models;
 
+/*
+ * Para criar uma classe de junção customizada:
+ * https://stackoverflow.com/questions/7050404/create-code-first-many-to-many-with-additional-fields-in-association-table?rq=1
+ */
+
 [Table("category")]
 public class Category
 {
@@ -15,7 +20,6 @@ public class Category
     public string Description { get; set; }
 
     public List<Recipe> Recipes { get; } = [];
-    public List<RecipeCategory> RecipeCategories { get; } = [];
 
     public Category()
     {

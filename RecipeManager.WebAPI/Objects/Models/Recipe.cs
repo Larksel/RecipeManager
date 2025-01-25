@@ -3,6 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RecipeManager.WebAPI.Objects.Models;
 
+/*
+ * Para criar uma classe de junção customizada:
+ * https://stackoverflow.com/questions/7050404/create-code-first-many-to-many-with-additional-fields-in-association-table?rq=1
+ */
+
 [Table("recipe")]
 public class Recipe
 {
@@ -22,10 +27,8 @@ public class Recipe
     public Difficulty Difficulty { get; set; }
 
     public List<Category> Categories { get; } = [];
-    public List<RecipeCategory> RecipeCategories { get; } = [];
 
     public List<Ingredient> Ingredients { get; } = [];
-    public List<RecipeIngredient> RecipeIngredients { get; } = [];
 
     public Recipe()
     {
